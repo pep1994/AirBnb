@@ -1,0 +1,90 @@
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+footer{
+  background: linear-gradient(180deg, rgba(225,60,60,1) 0%, rgba(225,135,135,1) 100%);
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  margin-top: 15px;
+  div {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 24%;
+    .loghetto{
+      img{
+        width: 60px;
+        margin-bottom: 15px;
+      }
+    }
+    p{
+      text-align: center;
+    }
+    a{
+      font-size: 15px;
+      text-decoration: none;
+      color: $redbnb;
+      padding: 10px;
+      background: white;
+      border-radius: 10px;
+      font-weight: bold;
+      margin-top: 20px;
+      &:hover {
+        text-decoration: none;
+        color: $redbnb;
+      }
+    }
+    ul{
+      line-height: 25px;
+      list-style-type: none;
+      text-align: center;
+    }
+    .footer_socials{
+      font-size: 30px;
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+    i{
+      color: white;
+      list-style-type: none;
+    }
+    h2{
+      margin-bottom: 10px;
+    }
+  }
+}
+// FINE FOOTER
+// INIZIO FOOTER RESPONSIVE
+@media screen and (max-width: 980px) {
+  footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .footer_logo{
+      min-width: 400px;
+    }
+    .footer_story{
+      min-width: 400px;
+    }
+    .footer_contacts{
+      min-width: 300px;
+      margin-bottom: 50px;
+    }
+    .footer_socials{
+      flex-direction: row !important;
+      min-width: 200px;
+      margin-top: 75px;
+      i{
+        font-size: 50px;
+        margin-right: 20px;
+      }
+    }
+  }
+}

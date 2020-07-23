@@ -1,0 +1,206 @@
+// INIZIO HEADER
+header {
+
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  padding-left: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.4s linear;
+  background-color: transparent;
+
+  &:hover .register-button {
+    transition: all 0.3s linear;
+  }
+
+  .header-sx {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header-logo {
+      @include allcenter;
+      width: 30%;
+      div {
+        margin-top: 11px;
+        a {
+          margin-top: 11px;
+          img {
+            width: 90px;
+            height: 75px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  // HEADER DX
+  .header-dx {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    ul {
+      margin-top: 16px;
+      width: 100%;
+      list-style-type: none;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      li {
+        a {
+          text-decoration: none;
+          font-weight: bold;
+          color: white;
+          letter-spacing: 1.5px;
+        }
+        &#login {
+           a {
+            color: white !important;
+          }
+        }
+      }
+      .register-button {
+          color: white !important;
+          letter-spacing: 1.5px;
+      }
+      i {
+        color: white !important;
+      }
+    }
+    .register-button {
+      padding: 0 1px !important;
+      height: 40px;
+      border: 1px solid $redbnb;
+      border-radius: 0.25rem;
+      display: flex;
+      align-items: center;
+      color: white;
+      // &:hover {
+      //   background: $redbnb;
+        // a {
+        //   color: white;
+        // }
+      // }
+    }
+    #login {
+      transition: all .2s linear;
+      &:hover {
+        opacity: .7;
+      }
+    }
+    .login-button {
+      padding: 0 16px;
+      height: 40px;
+      background: $redbnb;
+      border-radius: 0.25rem;
+      display: flex;
+      align-items: center;
+      color: white;
+    }
+
+    .dropdown {
+      a {
+        color: $redbnb !important;
+      }
+    }
+  }
+
+  .dx-responsive{
+    display: none;
+  }
+
+  .responsive-icon{
+    display: none;
+  }
+
+  .indietro {
+    text-align: center;
+    .fas {
+      font-size: 30px;
+      color: white;
+    }
+  }
+
+  // FINE HEADER DX
+
+  // INIZIO HEADER DX RESPONSIVE
+  @media screen and (max-width: 980px) {
+
+  header{
+    display: flex;
+    justify-content: space-between;
+  }
+
+    // debug buttons padding
+    .nav-link{
+      padding: 0 !important;
+    }
+
+    .responsive-icon{
+      padding-right: 30px;
+      display: block;
+      font-size: 40px;
+      color: $redbnb;
+    }
+
+    .header-dx{
+      display: none;
+    }
+
+    .dx-responsive{
+      display: none;
+      height: 200px;
+      width: 300px;
+      background: $redbnb;
+      border-radius: 10px;
+      margin-top: 150px;
+      margin-right: 20px;
+
+      ul{
+        height: 100%;
+        text-align: center;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        li{
+          width: 100%;
+          font-size: 20px;
+          font-weight: bold;
+
+          .dropdown-menu {
+            background: $redbnb;
+          }
+
+          a{
+            color: white !important;
+            text-decoration: none;
+            padding: 0px !important;
+
+            &:hover{
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 981px) {
+    .dx-responsive{
+      display: none !important;
+    }
+  }
+  // FINE HEADER DX RESPONSIVE
+
+// FINE HEADER
+}

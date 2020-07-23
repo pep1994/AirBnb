@@ -1,0 +1,55 @@
+// BANNER
+.aside_left {
+  background-color: #e13c3c;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px;
+  box-shadow: 0px 0px 19px 10px #9e2a2a;
+  box-shadow: 0px 0px 19px 10px #541313;
+  min-width: 324px;
+
+  .aside_content{
+    margin: auto;
+
+    .aside_title{
+
+      h1 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-size: 3rem;
+        text-align: center;
+        color: rgb(249, 164, 164);
+        margin-top: 15px;
+        padding-top:15px;
+        border-top: 1px solid lightgrey;
+      }
+
+      #noborder{
+        border-top: none;
+      }
+    }
+
+    .aside_p{
+
+      p {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.0rem;
+        color: rgb(252, 230, 230);
+      }
+    }
+
+    .aside_img{
+      text-align: center;
+
+
+      img {
+        height: 80%;
+        width: 80%;
+        border-radius: 3px;
+      }
+    }
+  }
+}

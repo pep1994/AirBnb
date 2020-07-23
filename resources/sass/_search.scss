@@ -1,0 +1,381 @@
+
+.logobnb-loading {
+  width: 90px;
+  height: 75px;
+  display: none;
+  position: fixed;
+  z-index: 3000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+  animation: girotondo 1.5s linear infinite;
+}
+
+
+.jumbotron{
+  height: 500px;
+  width: 100%;
+}
+
+.main_content {
+
+  .sponsored_and_filters{
+    display: flex;
+    justify-content: space-around;
+    background-image: url('../img/prova-sfondo-search.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    .sponsored_carousel {
+      width: 35%;
+    }
+
+    .filters{
+      padding-left: 25px;
+      border-radius: 20px;
+      margin-top: 40px;
+      height: 325px;
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      color: white;
+      background-color: $redbnb;
+      font-size: 20px;
+      margin-top: 50px;
+      box-shadow: 0px 0px 19px 10px #9e2a2a;
+      box-shadow: 0px 0px 19px 10px #541313;
+
+      .filters_checkbox{
+        height: 50%;
+
+        .checkboxup{
+          height: 50%;
+          display: flex;
+        }
+
+        .checkboxdown{
+          height: 50%;
+          display: flex;
+        }
+
+        .checkboxes{
+          width: 33.3%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+
+          label{
+            margin-left: 5px;
+          }
+
+          input{
+            width: auto;
+          }
+        }
+      }
+
+      .filters_tendine{
+        height: 16%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .tendine{
+          height: 10%;
+          width: 25%;
+
+          input{
+            width: 80%;
+          }
+
+        }
+      }
+
+    }
+  }
+
+  .cuoricino-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 15px;
+    cursor:pointer;
+    i {
+      font-size: 28px;
+    }
+  }
+}
+
+
+// MEDIA QUERY ----------------------------------------------------------------------------------------
+
+// DISPLAY 2K
+@media screen and (min-device-width: 2000px) {
+
+  .main_content .sponsored_and_filters {
+    background-position-x: 80%;
+  }
+}
+
+// DISPLAY 1080
+@media screen and (min-device-width: 1900PX) and (max-device-width: 1999px) {
+
+  .main_content .sponsored_and_filters {
+    background-position-x: 100%;
+  }
+}
+
+// SMALL PC
+@media screen and (min-device-width: 1200PX) and (max-device-width: 1899px) {
+
+  .main_content .sponsored_and_filters {
+    background-image: url('../img/sfondo-search-piccolo.png');
+    background-position: 80%;
+  }
+
+  .blog .carousel-indicators {
+    left: 0px;
+    top: 35px;
+  }
+
+  .carousel-inner {
+    margin-top: 20px;
+  }
+
+  .item-box-blog-image .created-at-stick {
+    width: 40%;
+    height: 15%;
+  }
+
+  .main_content h2 {
+    text-align: center;
+  }
+
+  .item-box-blog-body {
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+      font-size: 30px;
+    }
+
+    li {
+      font-size: 20px;
+    }
+  }
+
+  .item-box-blog-heading {
+    max-width: 100%;
+  }
+
+  .itemini {
+    max-width: 100%;
+  }
+
+  .apartment-services .servizi {
+    width: 100%;
+    height: 80%;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    justify-content: center;
+  }
+
+
+  .btn.bg-blue-ui.white.read {
+    cursor: pointer;
+    padding: 4px 20px;
+     float: none;
+    margin-top: 10px;
+  }
+
+  .main_content .sponsored_and_filters .sponsored_carousel {
+    width: 40%;
+  }
+
+  .main_content .sponsored_and_filters .filters {
+    width: 40%;
+    font-size: 20px;
+  }
+
+  .main_content .sponsored_and_filters .filters .filters_checkbox .checkboxes input {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+// DISPLAY TABLET
+@media screen and (min-device-width: 700px) and (max-device-width: 1199px) {
+
+  .main_content .sponsored_and_filters {
+    background-image: url('../img/sfondo-search-piccolo.png');
+    background-position: 80%;
+  }
+
+  .blog .carousel-indicators {
+    left: 0px;
+    top: 35px;
+  }
+
+  .carousel-inner {
+    margin-top: 20px;
+  }
+
+  .item-box-blog-image .created-at-stick {
+    width: 40%;
+    height: 20%;
+  }
+
+  .main_content h2 {
+    text-align: center;
+  }
+
+  .item-box-blog-body {
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+      font-size: 30px;
+    }
+
+    li {
+      font-size: 20px;
+    }
+  }
+
+  .item-box-blog-heading {
+    max-width: 100%;
+  }
+
+  .itemini {
+    max-width: 100%;
+  }
+
+  .apartment-services .servizi {
+    width: 100%;
+    height: 80%;
+    font-size: 16px;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+  }
+
+  .btn.bg-blue-ui.white.read {
+    cursor: pointer;
+    padding: 4px 20px;
+    float: left;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .main_content .sponsored_and_filters .sponsored_carousel {
+    width: 40%;
+  }
+
+  .main_content .sponsored_and_filters .filters {
+    width: 45%;
+    font-size: 23px;
+  }
+
+  .main_content .sponsored_and_filters .filters .filters_checkbox .checkboxes input {
+    width: 15px;
+    height: 15px;
+  }
+
+}
+
+// DISPLAY SMATPHONE
+@media screen and (max-device-width: 699px) {
+
+  .main_content .sponsored_and_filters {
+    background-image: none;
+  }
+
+  .main_content .sponsored_and_filters {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    background-image: url(../img/prova-sfondo-search.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+  }
+
+  .main_content .sponsored_and_filters .filters {
+    padding-left: 25px;
+    border-radius: 20px;
+    margin-top: 40px;
+    height: 450px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #e13c3c;
+    font-size: 30px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 19px 10px #9e2a2a;
+    box-shadow: 0px 0px 19px 10px #541313;
+    margin-bottom: 50px;
+  }
+
+  .main_content .sponsored_and_filters .filters .filters_checkbox .checkboxes input {
+    width: 40px;
+    height: 40px;
+  }
+
+  .main_content .sponsored_and_filters .sponsored_carousel {
+    width: 100%;
+  }
+
+  .item-box-blog-image .created-at-stick {
+    width: 40%;
+    height: 20%;
+  }
+
+  .item-box-blog-image .created-at-stick #created-at {
+    font-size: 30px;
+  }
+
+  .item-box-blog-body {
+    display: flex;
+    flex-direction: column;
+    font-size: 33px;
+
+    h4 {
+      font-size: 45px;
+    }
+
+    li {
+      font-size: 40px;
+    }
+  }
+
+  .item-box-blog-heading {
+    max-width: 100%;
+  }
+
+  .itemini {
+    max-width: 100%;
+  }
+
+  .apartment-services .servizi {
+    width: 100%;
+    height: 80%;
+    font-size: 16px;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+  }
+
+  .main_content .sponsored_and_filters {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    background-image: url(../img/prova-sfondo-search.png);
+    background-size: contain;
+    background-position-y: 25%;
+    background-repeat: no-repeat;
+    align-items: center;
+  }
+}

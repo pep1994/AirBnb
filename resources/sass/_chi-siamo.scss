@@ -1,0 +1,91 @@
+#content-bnb {
+    background-image: linear-gradient(180deg, rgb(225, 60, 60), white);
+    padding: 30px 0;
+    margin-top: 80px;
+
+}
+.profile-marco {
+    background: url('http://localhost:8000/img/marco-profile.jpg');
+    background-position: center -18px;
+    opacity: 0;
+    animation: marco-profile 1.5s 1.8s ease forwards;
+}
+
+.profile-gianmarco {
+    background: url('http://localhost:8000/img/gianmarco-profile.jpg');
+    background-position: center;
+    opacity: 0;
+    animation: gianmarco-profile 1.5s 1.8s ease forwards;
+}
+
+.profile-umberto {
+    background: url('http://localhost:8000/img/umberto-profile.jpg');
+    background-position: center;
+    opacity: 0;
+    animation: umberto-profile 1.5s linear forwards;
+}
+
+.profile-riccardo {
+    background: url('http://localhost:8000/img/riccardo-profile.jpg');
+    background-position: center;
+    opacity: 0;
+    animation: riccardo-profile 2.5s 2.5s linear forwards;
+}
+
+.profile-alessandro {
+    background: url('http://localhost:8000/img/alessandro-profile.jpg');
+    background-position: center 1px;
+    opacity: 0;
+    animation: alessandro-profile 1.5s linear forwards;
+}
+
+.profile-container {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.col-scale {
+    animation: profile-scale 2s 4.9s linear forwards;
+}
+
+.caption {
+    opacity: 0;
+    color: rgba(0,0,0,.7);
+    animation: content-stats-slide 1s 7s linear forwards;
+}
+
+// MEDIA QUERY ----------------------------------------------------------------------------------
+
+// DISPLAY 2K
+@media screen and (min-device-width: 2000px) {
+
+
+}
+
+// DISPLAY 1080
+@media screen and (min-device-width: 1900PX) and (max-device-width: 1999px) {
+
+
+}
+
+// SMALL PC
+@media screen and (min-device-width: 1200PX) and (max-device-width: 1899px) {
+
+
+}
+
+// DISPLAY TABLET
+@media screen and (min-device-width: 700px) and (max-device-width: 1199px) {
+
+
+
+}
+
+// DISPLAY SMATPHONE
+@media screen and (max-device-width: 699px) {
+
+
+}

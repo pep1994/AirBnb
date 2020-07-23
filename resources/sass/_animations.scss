@@ -1,0 +1,240 @@
+@keyframes fade-in {
+
+    0% {
+      opacity: 0;
+    }
+  
+    75% {
+      opacity: .7;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-up {
+  
+    0% {
+      transform: translateY(200px);
+    }
+  
+    75% {
+      opacity: .7;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes large-button {
+    0% {
+      transform: scale(1);
+    }
+
+
+    50% {
+      transform: scale(1.3)
+    }
+
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes slide-left {
+    0% {
+      transform: translateX(400px);
+      opacity: 0;
+    }
+
+    40% {
+      transform: translateX(0) scale(1);
+      opacity: 1;
+    }
+
+    70% {
+      transform: translateX(0) scale(1.1);
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateX(0) scale(1);
+      opacity: 1;
+    }
+
+  }
+
+  @keyframes girotondo {
+      0% {
+        transform:  translate(-50%, -50%) rotate(-1turn);
+      }
+  }
+
+  @keyframes logo-scale {
+    0% {
+      width: 20px;
+      transform: rotate(0);
+    }
+
+    85% {
+      opacity: 1;
+      width: 250px;
+      transform: rotate(0);
+    }
+
+    100% {
+      transform: rotate(180deg);
+      width: 250px;
+      opacity: 0;
+    }
+  }
+
+  @keyframes name-stats {
+    0% {
+      opacity: 0;
+    }
+
+    30% {
+      opacity: 1;
+    }
+
+    75% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes content-stats-slide {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes sponsor-slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(200px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes umberto-profile {
+    0% {
+      opacity: 0;
+      transform: translateX(-600px) rotate(0);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translate(0) rotate(-360deg);
+    }
+  }
+
+  @keyframes alessandro-profile {
+    0% {
+      opacity: 0;
+      transform: translateX(600px) rotate(0);
+    }
+
+
+    100% {
+      opacity: 1;
+      transform: translate(0) rotate(360deg);
+    }
+  }
+
+  @keyframes marco-profile {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes gianmarco-profile {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes riccardo-profile {
+    0% {
+      opacity: 0;
+      transform: translateY(-600px);
+    }
+
+    30% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    60% {
+      opacity: 1;
+      transform: translateY(-30px);
+    }
+
+    70% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    80% {
+      opacity: 1;
+      transform: translateY(-15px);
+    }
+
+    85% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    95% {
+      opacity: 1;
+      transform: translateY(-5px);
+    }
+
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes profile-scale {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.1);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }

@@ -1,0 +1,59 @@
+.main_content {
+
+  h2 {
+      color: $redbnb;
+  }
+
+  button {
+      background-color: $redbnb;
+      border-color: $redbnb;
+      color: white;
+      transition: all .2s linear;
+
+      &:hover {
+          opacity: .8;
+          color: white;
+      }
+  }
+
+  .form-check-inline {
+      label {
+          margin-bottom: 0;
+          margin-left: 5px;
+      }
+    }
+}
+
+
+// MEDIA QUERY ----------------------------------------------------------------------------------
+
+// DISPLAY 2K
+@media screen and (min-device-width: 2000px) {
+
+
+}
+
+// DISPLAY 1080
+@media screen and (min-device-width: 1900PX) and (max-device-width: 1999px) {
+
+
+}
+
+// SMALL PC
+@media screen and (min-device-width: 1200PX) and (max-device-width: 1899px) {
+
+
+}
+
+// DISPLAY TABLET
+@media screen and (min-device-width: 700px) and (max-device-width: 1199px) {
+
+
+
+}
+
+// DISPLAY SMATPHONE
+@media screen and (max-device-width: 699px) {
+
+
+}

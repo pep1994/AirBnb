@@ -1,0 +1,672 @@
+// INIZIO CASA
+* {
+  box-sizing: border-box;
+}
+
+body {
+
+  .main_content.content-myapartments {
+    background-image: linear-gradient(180deg, rgb(225, 60, 60), white);
+    margin-top: 80px;
+    padding: 50px;
+    // .container {
+    //   margin-top: 80px;
+    // }
+  }
+}
+
+
+.apartment {
+  border-top: 3px solid black;
+  height: 180%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // background: $redbnb;
+
+  // div[class^="section"] {
+  //   margin-bottom: 5px;
+  // }
+  .section1 {
+    @include allcenter;
+    width: 100%;
+    flex-direction: column;
+    background: $redbnb;
+    padding: 30px 20%;
+    height: 30%;
+    box-shadow:  0px 3px 20px 5px #888888;
+
+    .apartment-img {
+      height: 500px;
+      // width: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+
+      .img-principale {
+        text-align: center;
+        width: 45%;
+        height: 100%;
+        border-radius: 6px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 6px;
+        }
+      }
+
+      .img-secondarie{
+        width: 55%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        .img-scnd {
+          width: 50%;
+          height: 50%;
+          text-align: center;
+          padding: 2px;
+          border-radius: 3px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius:3px;
+          }
+        }
+      }
+      // img {
+      //   height: 300px !important;
+      //   width: 857px !important;
+      //   border-radius: 10px;
+      //   // display: none !important;
+      // }
+
+      // JUMBOTRON
+      // .cta-100 {
+      //   margin-top: 100px;
+      //   padding-left: 8%;
+      //   padding-top: 7%;
+      // }
+      //
+      // .col-md-4 {
+      //     padding-bottom:20px;
+      // }
+      // .white {
+      //   color: #fff !important;
+      // }
+      // .mt {
+      //   float: left;
+      //   margin-top: -20px;
+      //   padding-top: 20px;
+      // }
+      // .bg-blue-ui {
+      //   background-color: #708198 !important;
+      // }
+      // figure img{
+      //   height:200px;
+      // }
+    }
+  }
+}
+    .section2 {
+      width: 100%;
+      padding: 60px 25%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      // DESCRIZIONE APPARTAMENTO A SINISTRA ---------------------------
+      .apartment-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        width: 50%;
+        padding: 20px;
+        border-right: 1px solid lightgrey;
+
+        .titleprice {
+
+          h1 {
+            text-transform: capitalize;
+            color: $redbnb;
+          }
+          span {
+            color: rgb(139, 139, 139);
+            font-size: 15px;
+            font-weight: lighter;
+          }
+          .prezzo {
+            text-align: center;
+            width: 100px;
+            padding: 2px;
+            border: 1px solid $redbnb;
+            background-color: rgba(255, 57, 57, 0.34);
+            h6 {
+              font-size: 20px;
+              font-weight: bolder;
+              margin: 0 auto;
+            }
+          }
+
+          .separatore {
+            background: $redbnb;
+            width: 70%;
+            height: 2px;
+            margin-bottom: 20px;
+          }
+        } //chiude titleprice
+
+
+        .pannello-utente {
+          border-radius: 10px;
+          background-color: rgba(249, 47, 47, 0.09);
+          margin-top: 30px;
+          padding: 30px;
+          text-align: center;
+
+          h2 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-weight: bold;
+          }
+          .bottoni {
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            .fas {
+              color: $redbnb;
+              font-size: 50px;
+            }
+
+            p {
+              width: 200px;
+            }
+          }
+        }
+      } // chiude apartment-description
+
+      // SERVIZI APPARTAMENTO A DESTRA ------------------------------
+      .apartment-services {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 40%;
+
+        // @include allcenter;
+        .servizi {
+          width: 100%;
+          height: 80%;
+          font-size: 30px;
+          display: flex;
+          flex-wrap: wrap;
+          list-style-type: none;
+          li {
+            padding: 10px;
+            width: 50%;
+            height: 50%;
+            text-align: center;
+
+            .fas {
+              color: $redbnb;
+            }
+          }
+        }
+
+        .optional {
+          list-style: none;
+
+          h2 {
+            font-size: 20px;
+            color: $redbnb;
+            font-weight: bold;
+            text-align: center;
+          }
+
+          ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            text-align: center;
+            li {
+              margin-bottom: 20px;
+              width: 30%;
+              font-size: 20px;
+              color: white;
+              background-color:  $redbnb;
+              border-radius: 10px;
+              padding: 5px;
+            }
+          }
+        }
+      }
+    }
+
+    #marker {
+      background-image: url('../img/batacchino.png');
+      background-size: cover;
+      width: 50px;
+      height: 65px;
+      padding: 2px;
+    }
+    .section3 {
+      background: $redbnb;
+      padding: 40px 20%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 500px;
+      box-shadow: 0px 2px 25px 5px $redbnb;
+
+
+      .apartment-location-user {
+        border: 1px solid rgb(117, 35, 29);
+        border-radius: 1%;
+        height: 100%;
+        width: 100%;
+        height: 100%;
+        @include allcenter;
+        #map{
+          height: 100%;
+          width: 100%;
+          border-radius: 1%;
+        }
+      }
+
+      .apartment-location-public {
+        border: 1px solid rgb(117, 35, 29);
+        border-radius: 1%;
+        height: 100%;
+        width: 50%;
+        height: 100%;
+        @include allcenter;
+        #map{
+          height: 100%;
+          width: 100%;
+          border-radius: 1%;
+        }
+      }
+
+      .apartment-mail {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgba(84, 84, 84, 0.19);
+        border-radius: 1%;
+        border: 1px solid rgb(117, 35, 29);
+
+        h2 {
+          color: rgb(117, 35, 29);
+          font-weight: bold;
+        }
+
+        .formarco {
+          padding: 10px;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        input, textarea {
+          border: 2px solid rgb(117, 35, 29);
+          width: 80%;
+        }
+
+        textarea {
+          height: 70%;
+        }
+        button {
+          width: 35%;
+          background-color: rgb(117, 35, 29);
+          font-weight: bold;
+        }
+      }
+    }
+
+
+.my-apartments {
+  .card {
+    position: relative;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .9);
+  }
+
+
+}
+
+
+.card-img-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .btn-large {
+    color: white;
+    font-size: 22px;
+    background-color: $redbnb;
+    padding: 45px;
+    border-radius: 15px;
+    transition: all .3s linear;
+    animation: large-button 4s infinite linear;
+    &:hover {
+      opacity: .8;
+      animation: 0;
+    }
+  }
+}
+
+.btn-small {
+  color: white;
+  font-size: 15px;
+  background-color: $redbnb;
+  padding: 10px;
+  border-radius: 15px;
+  transition: all .3s linear;
+  position: fixed;
+  z-index: 200;
+  top: 100px;
+  right: 10px;
+  &:hover {
+    opacity: .8;
+    color: white;
+  }
+}
+
+.table-sponsor {
+  tbody {
+
+    tr {
+      background-image: linear-gradient(12deg, white 67%, #FCBA32 115%);
+    }
+
+  }
+  td {
+    text-align: center;
+    a {
+      margin: 2px;
+    }
+  }
+
+  th {
+    text-align: center;
+  }
+}
+
+.table-no-sponsor {
+  tbody {
+
+    tr {
+      background-image: linear-gradient(12deg, white 67%, rgb(225, 60, 60) 115%);
+    }
+
+  }
+  td {
+    text-align: center;
+    a {
+      margin: 2px;
+    }
+  }
+
+  th {
+    text-align: center;
+  }
+}
+
+.overlay-image-show {
+    background-color: rgba(0,0,0, .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    display: none;
+    z-index: 3000;
+    text-align: center;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 700px;
+      max-width: 800px;
+  }
+}
+
+// MEDIA QUERY ----------------------------------------------------------------------------------------
+
+// DISPLAY 2K
+@media screen and (min-device-width: 2000px) {
+
+}
+
+// DISPLAY 1080
+@media screen and (min-device-width: 1900PX) and (max-device-width: 1999px) {
+
+}
+
+// DISPLAY SMALL PC
+@media screen and (min-device-width: 1000PX) and (max-device-width: 1899px) {
+
+}
+
+// DISPLAY TABLET
+@media screen and (min-device-width: 700px) and (max-device-width: 999px) {
+
+}
+
+// DISPLAY SMATPHONE
+@media screen and (max-device-width: 699px) {
+  .table-sponsor {
+    td {
+      font-size: 22px;
+    }
+    th {
+      text-align: center;
+      font-size: 22px;
+    }
+  }
+
+  .table-no-sponsor {
+    td {
+      font-size: 22px;
+    }
+    th {
+      text-align: center;
+      font-size: 22px;
+    }
+  }
+}
+
+// MEDIA QUERY ----------------------------------------------------------------------------------
+
+// DISPLAY 2K
+@media screen and (min-device-width: 2000px) {
+
+
+}
+
+// DISPLAY 1080
+@media screen and (min-device-width: 1900PX) and (max-device-width: 1999px) {
+
+  .apartment .section1 .apartment-img {
+    height: 430px;
+  }
+
+}
+
+// SMALL PC
+@media screen and (min-device-width: 1200PX) and (max-device-width: 1899px) {
+
+  .apartment .section1 .apartment-img {
+    height: 270px;
+  }
+
+  .section2 {
+    padding: 60px 10%;
+  }
+
+  .section3 {
+    padding: 45px 10%;
+  }
+
+  .mapboxgl-canvas {
+    width: 480px;
+  }
+
+}
+
+// DISPLAY TABLET
+@media screen and (min-device-width: 700px) and (max-device-width: 1199px) {
+  .apartment .section1 .apartment-img {
+    height: 210px;
+  }
+
+  .section2 {
+    padding: 50px 3%;
+  }
+
+  .section3 {
+    padding: 45px 10%;
+  }
+
+  .mapboxgl-canvas {
+    width: 480px;
+  }
+
+  #titleprice h1 span {
+    display: block;
+  }
+
+
+}
+
+// DISPLAY SMATPHONE
+@media screen and (max-device-width: 699px) {
+
+  .titleprice h1  {
+    font-size: 40px;
+  }
+
+  .section2 .apartment-description .titleprice span {
+    font-size: 25px;
+  }
+
+  .section2 .apartment-description .titleprice .prezzo {
+    width: 140px;
+    padding: 5px;
+  }
+
+  .section2 .apartment-description .titleprice .prezzo h6 {
+    font-size: 30px;
+  }
+
+  .apartment-description p {
+    font-size: 30px;
+  }
+
+  .apartment-description b {
+    font-size: 25px;
+  }
+
+  .section2 .apartment-description .pannello-utente h2 {
+    font-size: 30px;
+  }
+
+  .section2 .apartment-description .pannello-utente .bottoni .fas {
+    font-size: 90px;
+  }
+
+  .bottoni h6 {
+    font-size: 25px;
+  }
+
+  .section2 .apartment-services .servizi {
+    font-size: 50px;
+  }
+
+  .section2 .apartment-services .optional ul li {
+    font-size: 30px;
+  }
+
+  .apartment .section1 {
+    padding: 30px 5%;
+  }
+
+  .apartment .section1 .apartment-img {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .apartment .section1 .apartment-img .img-secondarie {
+    width: 90%;
+    flex-wrap: nowrap;
+  }
+
+  .apartment .section1 .apartment-img .img-secondarie .img-scnd {
+    height: 100%;
+  }
+
+  .section2 {
+    padding: 60px 5%;
+    flex-direction: column;
+  }
+
+  .section2 .apartment-description {
+    width: 90%;
+    padding: 20px;
+    border-right: none;
+    border-bottom: 1px solid lightgrey;
+
+    .titleprice .separatore {
+        width: 100%;
+    }
+  }
+
+  .section2 .apartment-services {
+    width: 70%;
+  }
+
+  .section3 .apartment-location-public {
+    width: 70%;
+  }
+
+  .section3 .apartment-mail {
+    width: 70%;
+    margin: 30px;
+  }
+
+  .section3 {
+    padding: 50px 0%;
+    height: 750px;
+    flex-direction: column;
+
+    .mapboxgl-canvas {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+
+}

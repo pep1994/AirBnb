@@ -1,0 +1,121 @@
+.logo-container-animation {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .logo-animation {
+        width: 20px;
+        animation: logo-scale 2s linear forwards;
+    }
+}
+
+.name-animation {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $redbnb;
+
+    h3 {
+        opacity: 0;
+        animation: name-stats 3.5s 2.3s linear forwards ;
+    }
+}
+
+.content-stats {
+    opacity: 0;
+    animation: content-stats-slide 1.5s 5.8s linear forwards;
+}
+
+.btn-sponsor {
+    color: white;
+    opacity: 0;
+    background: #FCBA32;
+    transform: translateY(200px);
+    transition: all .2s linear;
+    animation: sponsor-slide-up 1.5s 7s linear forwards;
+    &:hover {
+        color: white;
+        opacity: .7;
+    }
+}
+
+// MEDIA QUERY ----------------------------------------------------------------------------------
+
+// DISPLAY 2K
+@media screen and (min-device-width: 2000px) {
+
+
+}
+
+// DISPLAY 1080
+@media screen and (min-device-width: 1900PX) and (max-device-width: 1999px) {
+
+
+}
+
+// SMALL PC
+@media screen and (min-device-width: 1200PX) and (max-device-width: 1899px) {
+
+  .allarga {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .row {
+
+    .back-circle {
+      font-size: 55px;
+    }
+  }
+
+  .col-md-6 {
+    max-width: 75%;
+    margin-bottom: 50px;
+  }
+
+}
+
+// DISPLAY TABLET
+@media screen and (min-device-width: 700px) and (max-device-width: 1199px) {
+
+  .allarga {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .back-circle {
+      font-size: 55px;
+    }
+  }
+
+
+  .col-md-6{
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+
+}
+
+// DISPLAY SMATPHONE
+@media screen and (max-device-width: 699px) {
+
+  .allarga {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .back-circle {
+      font-size: 55px;
+    }
+  }
+
+  .col-md-6{
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+
+}

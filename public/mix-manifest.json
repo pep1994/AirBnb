@@ -1,0 +1,14 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/js/checkInput.js": "/js/checkInput.js",
+    "/js/chiSiamo.js": "/js/chiSiamo.js",
+    "/js/createApartment.js": "/js/createApartment.js",
+    "/js/edit.js": "/js/edit.js",
+    "/js/login.js": "/js/login.js",
+    "/js/sponsor_apt.js": "/js/sponsor_apt.js",
+    "/js/stats.js": "/js/stats.js",
+    "/js/tomtom_home.js": "/js/tomtom_home.js",
+    "/js/tomtom_search.js": "/js/tomtom_search.js",
+    "/js/tomtom_show.js": "/js/tomtom_show.js"
+}

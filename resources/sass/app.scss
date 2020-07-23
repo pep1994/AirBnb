@@ -1,0 +1,75 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;800;900&display=swap');
+
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Variables
+@import 'variables';
+
+// SCSS Files
+@import 'carousel_one';
+@import 'animations';
+@import 'banner';
+@import 'header';
+@import 'jumbotron';
+@import 'home';
+@import 'createApartment';
+@import 'edit';
+@import 'search';
+@import 'footer';
+@import 'sponsor_apt';
+@import 'my-apartment';
+@import 'stats.scss';
+@import 'chi-siamo';
+
+* {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+  body {
+    overflow-x: hidden;
+    // .specific_apt {
+    //   background-color: #FFF;
+    //   border-radius: 4px;
+    //   width: 145px;
+    //   position: absolute;
+    //   top: 50px;
+    //   right: 50px;
+    // }
+
+    // .onHover{
+    //   background-image: linear-gradient(270deg, rgb(235, 223, 156), white);
+    // }
+  .main_content {
+      margin-top: 130px;
+      min-height: calc(100vh - 80px - 350px);
+    }
+
+
+    .caption {
+      a {
+        text-decoration: none;
+        h3 {
+          color: #000;
+        }
+      }
+    }
+
+    .alert-success, .alert-error {
+      position: absolute;
+      top: 300px;
+      left: 50%;
+      z-index: 100;
+      transform: translateX(-50%);
+    }
+  }
+
+  .back-circle {
+    font-size: 30px;
+  }
